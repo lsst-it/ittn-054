@@ -1,2 +1,4 @@
 TIG:Telegraf+InfluxDB+Grafana Stack
 k8s:Kubernetes
+DB:Database
+VM:Virtual Machine
