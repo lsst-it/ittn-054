@@ -1,6 +1,7 @@
 \documentclass[PMO,authoryear,toc]{lsstdoc}
+\usepackage{ragged2e}
 % lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
-\input{meta}
+%\input{meta}
 
 % Package imports go here.
 
@@ -22,7 +23,7 @@ Heinrich Reinking
 \setDocRef{ITTN-054}
 \setDocUpstreamLocation{\url{https://github.com/lsst-it/ittn-054}}
 
-\date{\vcsDate}
+\date{today}
 
 % Optional: name of the document's curator
 % \setDocCurator{The Curator of this Document}
@@ -36,9 +37,8 @@ Telegraf+InfluxDB+Grafana (AKA TIG) consists  on a plugin-driven server agent th
 % Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
 % See LPM-51 for version number policy.
 \setDocChangeRecord{%
-  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{Heinrich Reinking}
+  \addtohist{1}{2021-12-28}{First Commit}{Heinrich Reinking}
 }
-
 
 \begin{document}
 
@@ -49,11 +49,10 @@ Telegraf+InfluxDB+Grafana (AKA TIG) consists  on a plugin-driven server agent th
 
 % ADD CONTENT HERE
 % You can also use the \input command to include several content files.
-
+\input{tig_design.tex}
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
-\section{References} \label{sec:bib}
 \renewcommand{\refname}{} % Suppress default Bibliography section
 \bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
 
